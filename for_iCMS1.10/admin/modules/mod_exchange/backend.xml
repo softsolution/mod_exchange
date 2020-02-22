@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backend>
+    <module>
+        <id>mod_exchange</id>
+        <title>Курс валют</title>
+    </module>
+    <params>
+        <param type="flag" name="show_flag" title="Показывать Флаг валюты" default="on" />
+        <param type="flag" name="show_simbols" title="Показывать Символ валюты" hint="Символы существуют не для всех валют" default="on" />
+        <param type="flag" name="show_charcode" title="Показывать Код валюты" default="on" />
+        <param type="flag" name="show_name" title="Показывать Название валюты" default="on" />
+        <param type="flag" name="show_diff" title="Показывать Разницу с предыдущим значением" default="on" />
+        <param type="number" name="server_diff" title="Разница времени сервера с Московским" units="ч." default="0" />
+        <param type="list" name="time_upd" title="Время обновления. Нижняя граница" hint="Курсы валют обновляются в 15-00 по Москве. Московское время">
+            <option title="12:00" value="13:00" />
+            <option title="13:00" value="13:00" />
+            <option title="14:00" value="14:00" />
+            <option title="15:00" value="15:00" />
+            <option title="16:00" value="16:00" />
+        </param>
+        <param type="list" name="time_upd_stop" title="Время обновления. Верхняя граница" hint="Московское время">
+            <option title="17:00" value="17:00" />
+            <option title="18:00" value="18:00" />
+            <option title="19:00" value="19:00" />
+            <option title="20:00" value="20:00" />
+            <option title="21:00" value="21:00" />
+        </param>
+        <param type="flag" name="AZN" title="Азербайджанский манат" default="1" />
+        <param type="flag" name="AUD" title="Австралийский доллар" default="1" />
+        <param type="flag" name="GBP" title="Фунт стерлингов Соединенного королевства" default="1" />
+        <param type="flag" name="AMD" title="Армянских драмов" default="1" />
+        <param type="flag" name="BYR" title="Белорусских рублей" default="1" />
+        <param type="flag" name="BGN" title="Болгарский лев" default="1" />
+        <param type="flag" name="BRL" title="Бразильский реал" default="1" />
+        <param type="flag" name="HUF" title="Венгерских форинтов" default="1" />
+        <param type="flag" name="DKK" title="Датских крон" default="1" />
+        <param type="flag" name="USD" title="Доллар США" default="1" />
+        <param type="flag" name="EUR" title="Евро" default="1" />
+        <param type="flag" name="INR" title="Индийских рупий" default="1" />
+        <param type="flag" name="KZT" title="Казахских тенге" default="1" />
+        <param type="flag" name="CAD" title="Канадский доллар" default="1" />
+        <param type="flag" name="KGS" title="Киргизских сомов" default="1" />
+        <param type="flag" name="CNY" title="Китайских юаней" default="1" />
+        <param type="flag" name="LVL" title="Латвийский лат" default="1" />
+        <param type="flag" name="LTL" title="Литовский лит" default="1" />
+        <param type="flag" name="MDL" title="Молдавских леев" default="1" />
+        <param type="flag" name="NOK" title="Норвежских крон" default="1" />
+        <param type="flag" name="PLN" title="Польских злотых" default="1" />
+        <param type="flag" name="RON" title="Новых румынских леев" default="1" />
+        <param type="flag" name="XDR" title="СДР (специальные права заимствования)" default="1" />
+        <param type="flag" name="SGD" title="Сингапурский доллар" default="1" />
+        <param type="flag" name="TJS" title="Таджикских сомони" default="1" />
+        <param type="flag" name="TRY" title="Турецкая лира" default="1" />
+        <param type="flag" name="TMT" title="Новый туркменский манат" default="1" />
+        <param type="flag" name="UZS" title="Узбекских сумов" default="1" />
+        <param type="flag" name="UAH" title="Украинских гривен" default="1" />
+        <param type="flag" name="CZK" title="Чешских крон" default="1" />
+        <param type="flag" name="SEK" title="Шведских крон" default="1" />
+        <param type="flag" name="CHF" title="Швейцарский франк" default="1" />
+        <param type="flag" name="ZAR" title="Южноафриканских рэндов" default="1" />
+        <param type="flag" name="KRW" title="Вон Республики Корея" default="1" />
+        <param type="flag" name="JPY" title="Японских иен" default="1" />
+    </params>
+</backend>
